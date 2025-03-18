@@ -1,15 +1,17 @@
 {
-    "version" : 2,
-    "builds" :[
-        {
-            "src" : "index.js",
-            "use" : "@vercel/node"
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
     ],
-    "routes" : [
-        {
-            "src" : "/(.*)",
-            "dest" : "index.js"
-        }
-    ]
-}
+    "env": {
+      "DATABASE_NAME": "crudDb_amratheras",
+      "DATABASE_USER": "username",
+      "DATABASE_PASSWORD": "password",
+      "DATABASE_HOST": "o1t8b.h.filess.io",
+      "DATABASE_PORT": "61002"
+    }
+  }
+  
