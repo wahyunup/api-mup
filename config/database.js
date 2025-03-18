@@ -1,9 +1,17 @@
 import { Sequelize } from "sequelize";
+import dotenv from "dotenv";
 
-const db = new Sequelize("crudDb_amratheras", "crudDb_amratheras", "3c7c78b4e05c2b7bb7f5044875f2522f422f25e3",{
-    host :'o1t8b.h.filess.io',
-    dialect: 'mysql',
-    port:"61002"
-})
+dotenv.config();
 
-export default db
+const db = new Sequelize(
+  process.env.DATABASE_NAME,
+  process.env.DATABASE_USERNAME,
+  process.env.DATABASE_PASSWORD,
+  {
+    host: process.env.DATABASE_HOST,
+    dialect: process.env.DATABASE_DIALECT,
+    port: process.env.DATABASE_PORT,
+  }
+);
+
+export default db;
