@@ -8,8 +8,8 @@
     ],
     "env": {
       "DATABASE_NAME": "crudDb_amratheras",
-      "DATABASE_USER": "username",
-      "DATABASE_PASSWORD": "password",
+      "DATABASE_USER": "crudDb_amratheras",
+      "DATABASE_PASSWORD": "3c7c78b4e05c2b7bb7f5044875f2522f422f25e3",
       "DATABASE_HOST": "o1t8b.h.filess.io",
       "DATABASE_PORT": "61002"
     }
